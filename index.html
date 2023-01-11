@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!--declara que es la version HTML:5 -->
+
+<html lang="es"> <!--definimos el ideoma-->
+    <head>
+        <meta charset="UTF-8"> <!-- definimos el dicionarios y el navegador reconoce los caracteres-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- adapta la pantalla para tablet, mobil -->
+        <title>Encriptador de Texto</title> <!-- Titulo de la pestaña en el navegador -->
+        
+        <link rel="stylesheet" href="reset.css"> <!-- resetea valores para la web-->
+        <link rel="stylesheet" href="style.css"> <!--conecta con el archivo que se guardan los stylos-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Elige la letra para la web-->
+    </head>
+
+    <body>
+        <header>
+            <div class="box">
+                <img class="logo" src="Imagenes/Vector.png" alt="logo alura">
+                <h1 class="titulologo">Encriptador de texto</h1>
+                <p class="hecho">Challenger realizado por:<br>Dalila Hubalde</p>
+                
+            </div>
+
+        </header>    
+
+        <main>
+            <div class="box">
+                <div class="encriptador">
+                    <form class="encriptadorForm"> 
+                        <div class="textoArea">
+                            <textarea name="texto" id="texto" placeholder="Ingresar el texto aqui"></textarea>
+                            <div class="textoInfo">
+                                <div class="info">
+                                    <img src="Imagenes/Vector2.png" alt="exclamacion">
+                                    <p id="signo">Solo Letras Minúsculas y Sin Acentos</p>
+                                </div>
+                            </div>
+                                                
+                            <div class="btn">
+                                <button id="encriptar" class="btnEncriptar" type="button">Encriptar</button>
+                                <button id="desencriptar" class="btnDesencriptar" type="button">Desencriptar</button>
+                            </div>
+                        </div>    
+                    </form>        
+
+                    <div class="resultado">
+                        <div class="boxResultado">
+                            <div class="contenidoNoResuelto" id="noResuelto">
+                                <p>Ningun mensaje fue encontrado</p>
+                                <p>Ingresa el texto a encriptar</p>
+                            </div>
+
+                            <div class="contenidoResuelto" id="resuelto">
+                                <textarea name="textoResultado" id="textoResultado" disabled></textarea>
+                                <button id="copiar" type="button">Copiar</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <script src="function.js"></script>
+    </body>
+</html>
